@@ -315,10 +315,6 @@ if os.path.exists('custom.py'):
 
     custom_run(conn, app)
 
-#####################
-app = Flask(__name__)
-######################
-
 # Func
 @app.route('/del_alarm')
 def alarm_del():
