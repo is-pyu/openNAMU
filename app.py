@@ -62,7 +62,7 @@ while 1:
             else:
                 print('DB name (data) : ', end = '')
 
-            new_json[1] = str(input())
+            #new_json[1] = str(input())
             if new_json[1] == '':
                 new_json[1] = 'data'
 
@@ -83,18 +83,18 @@ if set_data['db_type'] == 'mysql':
 
         while 1:
             print('DB user ID : ', end = '')
-            new_json[0] = str(input())
+            #new_json[0] = str(input())
             if new_json[0] != '':
                 break
 
         while 1:
             print('DB password : ', end = '')
-            new_json[1] = str(input())
+            #new_json[1] = str(input())
             if new_json[1] != '':
                 break
 
         print('DB host (localhost) : ', end = '')
-        new_json[2] = str(input())
+        #new_json[2] = str(input())
         if new_json[2] == '':
             new_json[2] == 'localhost'
 
