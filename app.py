@@ -92,7 +92,7 @@ if set_data['db_type'] == 'mysql':
             new_json[1] = str(input())
             if new_json[1] != '':
                 break
-                
+
         print('DB host (localhost) : ', end = '')
         new_json[2] = str(input())
         if new_json[2] == '':
@@ -264,10 +264,10 @@ if set_data['db_type'] == 'sqlite':
             back_up_where = back_up_where[0][0]
         else:
             back_up_where = 'back_' + set_data['db'] + '.db'
-        
+
         try:
             shutil.copyfile(
-                set_data['db'] + '.db', 
+                set_data['db'] + '.db',
                 back_up_where
             )
 
@@ -314,6 +314,10 @@ if os.path.exists('custom.py'):
     from custom import custom_run
 
     custom_run(conn, app)
+
+#####################
+app = Flask(__name__)
+######################
 
 # Func
 @app.route('/del_alarm')
@@ -739,3 +743,10 @@ class NoLoggingWSGIRequestHandler(wsgiref.simple_server.WSGIRequestHandler):
 httpd = wsgiref.simple_server.make_server(server_set['host'], int(server_set['port']), app, handler_class = NoLoggingWSGIRequestHandler)
 if __name__ == "__main__":
     httpd.serve_forever()
+
+#####################
+
+app = Flask(__name__)
+if __name__ == "__main__":
+  port = int(os.environ.get("PORT", 5000")
+  app.run(host="0.0.0.0", port=port)
