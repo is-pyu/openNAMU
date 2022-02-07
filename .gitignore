@@ -1,7 +1,7 @@
 __pycache__
 /app_session
 
-data/set.json
+
 data/mysql.json
 data/oauthsettings.json
 
