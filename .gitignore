@@ -10,8 +10,8 @@ route/tool/set_mark/custom.py
 images
 .vscode
 
-*.db
-*.db-journal
+#*.db
+#*.db-journal
 
 robots.txt
 custom.py
