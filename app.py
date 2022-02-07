@@ -47,7 +47,7 @@ while 1:
             normal_db_type = ['sqlite', 'mysql']
 
             print('DB type (sqlite) [sqlite, mysql] : ', end = '')
-            new_json[0] = str(input())
+            #new_json[0] = str(input())
             if new_json[0] == '' or not new_json[0] in normal_db_type:
                 new_json[0] = 'sqlite'
 
